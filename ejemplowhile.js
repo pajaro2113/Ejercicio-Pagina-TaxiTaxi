@@ -8,7 +8,7 @@
 //     num2--;
 //     document.write(`${num2}<br>`);
 // }
-let tope = parseInt(prompt("ingrese el monte que quiere ahorrar"));
+let tope = parseInt(prompt("ingrese el monto que quiere ahorrar"));
 let ingreso = parseInt(prompt("Cuanto quiere ahorrar??"));
 while(ingreso < tope){
     document.write(`${ingreso}<br>`);
