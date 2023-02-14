@@ -1,7 +1,13 @@
-let tope = parseInt(prompt("ingrese hasta donde llega la serie"));
-let i;
-let factorial = 1;
-for (i=1; i<=tope; i++){
-    factorial=factorial*i;
-    document.write(factorial+"<br>");
+let tope = parseInt(prompt("ingrese hasta donde quiere llegar"));
+let i=0;
+let cadena;
+let tope2;
+
+for (i; i<tope; i++){
+      cadena = '';
+      for(tope2=0; tope2<=i; tope2++){
+        cadena += 1;
+      }
+        
+      document.write(`${cadena}<br>`)
 }
