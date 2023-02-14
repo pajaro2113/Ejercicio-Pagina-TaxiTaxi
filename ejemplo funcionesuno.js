@@ -19,11 +19,25 @@
 const sumar = (num1,num2)=>{
     num1 = parseInt(prompt("primer numero"));
     num2 = parseInt(prompt("numero dos porfa"));
-    suma = num1+num2;
+    let suma = num1+num2;
     return suma;
 }
-document.write('el resultado primero es '+sumar());
-document.write("<br>");
-document.write(sumar());
-document.write("<br>");
-document.write(sumar());
+const restar = (num1,num2)=>{
+    num1 = parseInt(prompt("primer numero a restar"));
+    num2 = parseInt(prompt("numero dos porfavor"));
+    let resta = num1-num2;
+    return resta;
+}
+
+const opcion = (miOpcion)=>{
+    miOpcion = parseInt(prompt("escriba la operacio que desea realizar"));
+    if(miOpcion == 1){
+        return sumar();
+    }else if(miOpcion == 2){
+       return restar();
+    }else{
+        document.write(opcion());
+    }
+    return miOpcion;
+}
+document.write(opcion());
