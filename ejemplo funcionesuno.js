@@ -65,6 +65,34 @@
 // fiesta();
 // ________________________________________________
 
+//________________________________________________
 
+//let cantidadColor = parseInt(prompt("cuantos colores son"));
+const persona = [{
+   nombre:"alvaro",
+   edad:32,
+   comida:"arroz de pollo"
+},
+{
+   nombre:"pajaro",
+   edad:30,
+   comida:"carne"
+}];
+console.log(persona);
 
+persona.nombre.push = document.write(prompt("ingrese el nombre"));
+persona.edad.push = document.write(prompt("edad"));
+persona.comida.push = document.write(prompt("comida favorita"));
 
+// persona.push({
+//    nombre:"fernandez",
+//    edad:25,
+//    comida:"higado"
+// })
+// for(let i=0; i<cantidadColor; i++){
+//    let color = prompt("ingrese un color");
+//    colores.push(color);
+   
+// }
+// document.write(persona);
+// console.log(persona);
