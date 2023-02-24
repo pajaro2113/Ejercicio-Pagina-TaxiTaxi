@@ -66,33 +66,136 @@
 // ________________________________________________
 
 //________________________________________________
+// const miComida = () =>{
+//    const comidaFavorita = Array.of();
+//    let conta = 0;
+//    let tamañoArreglo = parseInt(prompt("cuantos platos son"));
+//    while(conta < tamañoArreglo){
+//       let nombrePlato = prompt("nombre del plato");
+//       let precioPlato = parseInt(prompt("precio del plato"));
+//       comidaFavorita.push({"nombre":nombrePlato,
+//    "precio":precioPlato});
+//    conta++;
+// }
+// return comidaFavorita;
+// }
+// //console.log(miComida());
 
-//let cantidadColor = parseInt(prompt("cuantos colores son"));
-const persona = [{
-   nombre:"alvaro",
-   edad:32,
-   comida:"arroz de pollo"
-},
-{
-   nombre:"pajaro",
-   edad:30,
-   comida:"carne"
-}];
-console.log(persona);
+// const deportes = ()=>{
+//    const hacerDeporte = Array.of();
+//    let conta = 0;
+//    let numDeporte = parseInt(prompt("cuantos deportes hara hoy"));
+//    while(conta < numDeporte){
+//       let nombreDeporte = prompt("nombre del deporte");
+//       hacerDeporte.push(nombreDeporte);
+//       conta++;
+//    }
+//    return hacerDeporte;
+// }
+// //console.log(deportes());
+// //___________________________________________________
+// document.write("+---------------------------+");
+// document.write("<br>");
+// document.write("            OPCION 1         ");
+// document.write("<br>");
+// document.write("            OPCION 2         ");
+// document.write("<br>");
+// document.write("+---------------------------+");
 
-persona.nombre.push = document.write(prompt("ingrese el nombre"));
-persona.edad.push = document.write(prompt("edad"));
-persona.comida.push = document.write(prompt("comida favorita"));
+// const actividades = ()=>{
+// let actividad = parseInt(prompt("escoja una opcion"));
+// if(actividad == 1){
+//    console.log(miComida());
+// }else if(actividad == 2){
+//   console.log(deportes());
+// }else{
+//    alert("escoja una opcion valida");
+//    actividades();
+// }
 
-// persona.push({
-//    nombre:"fernandez",
-//    edad:25,
-//    comida:"higado"
-// })
-// for(let i=0; i<cantidadColor; i++){
-//    let color = prompt("ingrese un color");
-//    colores.push(color);
+// }
+// actividades();
+
+
+//_______________________________________________
+
+// let estado = false;
+
+// const puedeIngresar = (edad,hora)=>{
+//    edad = parseInt(prompt("escriba su edad"));
+//    if(edad >= 18){
+//       hora = parseInt(prompt("que HORA es"));
+//       if(hora >= 2 && hora < 5 && estado==false){
+//          document.write("puedes estrar GRATIS");
+//          estado = true;
+//       }else{
+//          document.write('puedes estrar PERO DEBES PAGAR');
+//       }
+//    }else{
+//       document.write("eres menor de edad")
+//    }
+// }
+// puedeIngresar();
+// document.write("<br>");
+// puedeIngresar();
+// document.write("<br>");
+// puedeIngresar();
+// document.write("<br>");
+// puedeIngresar();
+// document.write("<br>");
+// puedeIngresar();
+//__________________________________________________________________
+
+// const estidiante = (nombreEstudiante,estado)=>{
    
 // }
-// document.write(persona);
-// console.log(persona);
+
+//------------------------------------------------------------
+// CALCULADORA
+var n1=0;
+var n2=0;
+const sumar = (numero1,numero2)=>{
+   return numero1+numero2;
+}
+
+const restar = (numero1,numero2)=>{
+   return numero1-numero2;
+}
+
+const operaciones = ()=>{
+   let opciones = parseInt(prompt("1:SUMAR  2:RESTAR"));
+   
+   if(opciones==1){
+      n1 = parseInt(prompt("ingrese numero1"));
+      n2 = parseInt(prompt("ingrese numero2"));
+      return sumar(n1,n2);
+   }else if(opciones==2){
+      n1 = parseInt(prompt("ingrese numero1"));
+      n2 = parseInt(prompt("ingrese numero2"));
+      return restar(n1,n2);
+}
+}
+document.write(operaciones());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
