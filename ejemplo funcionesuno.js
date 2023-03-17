@@ -152,30 +152,94 @@
 
 //------------------------------------------------------------
 // CALCULADORA
-var n1=0;
-var n2=0;
-const sumar = (numero1,numero2)=>{
-   return numero1+numero2;
-}
+// var n1=0;
+// var n2=0;
+// const sumar = (numero1,numero2)=>{
+//    return numero1+numero2;
+// }
 
-const restar = (numero1,numero2)=>{
-   return numero1-numero2;
-}
+// const restar = (numero1,numero2)=>{
+//    return numero1-numero2;
+// }
 
-const operaciones = ()=>{
-   let opciones = parseInt(prompt("1:SUMAR  2:RESTAR"));
+// const operaciones = ()=>{
+//    let opciones = parseInt(prompt("1:SUMAR  2:RESTAR"));
    
-   if(opciones==1){
-      n1 = parseInt(prompt("ingrese numero1"));
-      n2 = parseInt(prompt("ingrese numero2"));
-      return sumar(n1,n2);
-   }else if(opciones==2){
-      n1 = parseInt(prompt("ingrese numero1"));
-      n2 = parseInt(prompt("ingrese numero2"));
-      return restar(n1,n2);
+//    if(opciones==1){
+//       n1 = parseInt(prompt("ingrese numero1"));
+//       n2 = parseInt(prompt("ingrese numero2"));
+//       return sumar(n1,n2);
+//    }else if(opciones==2){
+//       n1 = parseInt(prompt("ingrese numero1"));
+//       n2 = parseInt(prompt("ingrese numero2"));
+//       return restar(n1,n2);
+// }
+// }
+// document.write(operaciones());
+//_____________________________________________________________________
+
+
+//CLASES, METODOS
+
+class animal{
+   constructor(especie,edad,color){
+      this.especie = especie;
+      this.edad = edad;
+      this.color = color;
+      this.info = `Soy ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`
+   } 
+    verInfo(){
+      document.write(this.info, '<br>')
+   }
 }
+
+class Perro extends animal{
+   constructor(especie,edad,color,raza){
+      super(especie,edad,color);
+      this.raza = raza;
+   }
 }
-document.write(operaciones());
+
+let animalUno = new animal("mico",5,"marron");
+let animalDos = new animal("gato",2,"blanco");
+let animalTres = new animal("perro",1,"verde");
+
+animalUno.verInfo();
+animalDos.verInfo();
+animalTres.verInfo();
+
+// document.write(perro.info,'<br>');
+// document.write(gato.info,'<br>');
+// document.write(pajaro.info,'<br>');
+
+
+// let pc = [{
+//    nombre: "alvaroPC",
+//    procesador: "intel Core",
+//    marca: "Lenovo",
+//    ram: 6,
+//    espacio: "1TB" },
+//    {nombre: "pajaro",
+//    procesador: "celeron",
+//    marca: "dell",
+//    ram: 8,
+//    espacio: "2TB"}
+// ]; 
+// console.log(pc);
+// document.write(pc);
+// document.write(`nombe: <b>${pc.nombre}</b><br>
+//               procesardor <b>${pc.procesador}</b><br>`);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
