@@ -74,9 +74,10 @@
 
 
 class celulares {
-    constructor(color,peso,resoPantalla,resoCamara,ram){
+    constructor(color,peso,tamaño,resoPantalla,resoCamara,ram){
         this.color = color;
         this.peso = peso;
+        this.tamaño = tamaño;
         this.resoluciondePantalla = resoPantalla;
         this.resoluciondeCamara = resoCamara;
         this.memoriaRam = ram;
@@ -94,7 +95,7 @@ class celulares {
         if(this.encendido == true){
             alert('reiniciando celular...');
         }else{
-            alert('el telefono no se puede reinicial, pues esta aagado');
+            alert('el telefono no se puede reinicial, pues esta apagado');
         }
     }
     tomarFotos(){
@@ -103,13 +104,41 @@ class celulares {
     grabarVideo(){
         alert(`video grabado a ${this.resoluciondeCamara} Megapixeles`);
     }
+    mostrarInfo(){
+        return `
+        Color: <b>${this.color}</b></br>
+        Peso: <b>${this.peso}</b></br>
+        Tamaño: <b>${this.tamaño}</b></br>
+        Resolucion de camara: <b>${this.resoluciondePantalla}</b></br>
+        Resolucion de video: <b>${this.resoluciondeCamara}</b></br>
+        Memoria Ram: <b>${this.memoriaRam}</b></br>`;
+    }
 }
 
-const celularUno = new celulares("rojo","150g","1024px","724px","4Mb"); 
-const celularDos = new celulares("blanco","10g","2048px","724px","2Mb"); 
-const celularTres = new celulares("gris","250g","1024px","1024px","2Mb"); 
+class altaGama extends celulares{
+    constructor(color,peso,tamaño,resoPantalla,resoCamara,ram,grabarLento,rFacial,camExtra){
+        this.color = color;
+        this.peso = peso;
+        this.tamaño = tamaño;
+        this.resoluciondePantalla = resoPantalla;
+        this.resoluciondeCamara = resoCamara;
+        this.memoriaRam = ram;
+        this.encendido = false;
+        this.grabarLento = grabarLento;
+        this.rFacial = rFacial;
+        this.camExtra = camExtra;
+    }
+}
 
-celularUno.prender();
-celularUno.reiniciar();
-celularUno.grabarVideo();
-celularUno.tomarFotos();
+const celularUno = new celulares("rojo","150g","5'","1024px","724px","4Mb"); 
+const celularDos = new celulares("blanco","10g","15'","2048px","724px","2Mb"); 
+const celularTres = new celulares("gris","250g","10'","1024px","1024px","2Mb"); 
+
+// celularUno.prender();
+// celularUno.reiniciar();
+// celularUno.grabarVideo();
+// celularUno.tomarFotos();
+document.write(`
+${celularUno.mostrarInfo()}<br>
+${celularDos.mostrarInfo()}<br>
+${celularTres.mostrarInfo()}<br>`);
