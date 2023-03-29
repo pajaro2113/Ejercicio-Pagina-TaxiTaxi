@@ -220,7 +220,7 @@
 
 
 //______________________________________________________________________________
-//CADENAS
+//CADENAS o metodos de string
 
 let cadena1 = "cadenadeprueba";
 let cadena2 = "prueba"
@@ -235,8 +235,90 @@ let cadena2 = "prueba"
 // resultado = cadena1.includes(cadena2);
 // includes -> si lo qe esta en al cadena dos pertenece a la cadena uno;
 
-resultado = cadena1.substring(0,2);
+// resultado = cadena1.substring(2,7);
 //substring -> muestra solo los caracteres desde el que empieza hasta el que termina -1;
 
 
-document.write(resultado);
+// document.write(resultado);
+
+// _________________________________________________________
+//metodos de array ( transformadores)
+
+// let nombres =["pedro","maria","jorge"];
+
+// let resultado = nombres.pop()
+
+// document.write(resultado);
+
+// pop -> elimina el utimo objeto de un array
+
+// let nombres =["pedro","maria","jorge"];
+
+// let resultado = nombres.shift();
+
+// document.write(resultado);
+
+// shift -> remueve el primer elemento de un array
+
+// let nombres =["pedro","maria","jorge"];
+
+// let resultado = nombres.push("alvaro")
+
+// document.write(nombres);
+
+//push -> agrga un nuevo elemento  a mi array
+
+// let nombres =["pedro","maria","jorge","adriana","josefa"];
+// document.write(nombres+"<br>");
+
+// let resultado = nombres.reverse();
+
+// document.write(resultado);
+
+// reverse -> muestra de mnra inversa o alrevez el array, de atras para adelante
+
+
+// let nombres =["pedro","maria","jorge"];
+
+// let resultado = nombres.unshift("pajaro")
+
+// document.write(nombres);
+
+// unshift -> agrega elementos al inicio del array
+
+// let nombres =[1,5,2,8,5,7,3,5,9,2,100,11,2];
+
+// document.write(nombres+"<br>");
+
+// let resultado = nombres.sort()
+
+// document.write(nombres);
+
+// sort -> organiza u ordena el arreglo e manera alfabetica
+
+
+// let nombres =[1,5,2,8,5,7,3,5,9,2,100,11,2];
+
+// document.write(nombres+"<br>");
+
+// let resultado = nombres.splice(3,6,"oigalo");
+
+// document.write(nombres);
+
+// splice -> cambia en contenido del array agregando o elimminando elementos existentes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
