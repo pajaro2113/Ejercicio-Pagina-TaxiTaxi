@@ -222,8 +222,8 @@
 //______________________________________________________________________________
 //CADENAS o metodos de string
 
-let cadena1 = "cadenadeprueba";
-let cadena2 = "prueba"
+// let cadena1 = "cadenadeprueba";
+// let cadena2 = "prueba"
 
 //resultado = cadena1.concat(cadena2); 
 //concat junta dos o mas cadenas
@@ -308,10 +308,85 @@ let cadena2 = "prueba"
 // splice -> cambia en contenido del array agregando o elimminando elementos existentes
 
 
+// let nombres =["alvaro","javier","pajaro","fernandez"];
+
+// document.write(nombres+"<br>");
+
+// let resultado = nombres.join("<br>respuesta: ")
+
+// document.write("respuesta: "+resultado);
+
+// join -> convierte un array en una cadena de texto
 
 
 
+// let nombres =["alvaro","javier","pajaro","fernandez"];
 
+// document.write(nombres+"<br>");
+
+// let resultado = nombres.slice(0,3);
+
+// document.write(resultado);
+// slice -> muestra desdel el primer elemento de un array hasta donde qeramos
+
+
+class calculadora{
+    constructor(){}
+    sumar(){
+        let num1 = parseInt(prompt("escriba numero 1"));
+        let num2 = parseInt(prompt("escriba el valor 2"));
+        return num1 + num2;
+    }
+    restar(){
+        let num1 = parseInt(prompt("escriba numero 1"));
+        let num2 = parseInt(prompt("escriba el valor 2"));
+        return num1 - num2;
+    } 
+    multiplicar(){
+        let num1 = parseInt(prompt("escriba numero 1"));
+        let num2 = parseInt(prompt("escriba el valor 2"));
+        return num1 * num2;
+    } 
+    dividir(){
+        let num1 = parseInt(prompt("escriba numero 1"));
+        let num2 = parseInt(prompt("escriba el valor 2"));
+        return num1 / num2;
+    }
+    potenciar(){
+        let num1 = parseInt(prompt("escriba la BASE"));
+        let num2 = parseInt(prompt("escriba la potencia"));
+        // let result = num1;
+        // for(let i = 0; i < num2-1; i++){
+        //     result = result * num1;
+        // }
+        // return result;
+        return num1**num2;
+    }
+    raizCuadrada(){
+        let num1 = parseInt(prompt("Digite el numero para sacar raiz"));
+        //let num2 = parseInt(prompt("escriba la potencia"));
+        return Math.sqrt(num1);
+    }
+}
+const ejercicioUno = new calculadora();
+alert(`Escoga una opccion`);
+let operacion = prompt(`1:Sumar  2:Restar 3:Multiplicar 4:Dividir 5:Potenciar 6:Raiz Cuadrada`);
+
+if(operacion == 1){
+    document.write(`la Suma es: ${ejercicioUno.sumar()}`);
+}else if(operacion == 2){
+    document.write(`la Resta es: ${ejercicioUno.restar()}`);
+}else if(operacion == 3){
+    document.write(`el Producto es: ${ejercicioUno.multiplicar()}`);
+}else if(operacion == 4){
+    document.write(`la Divicion es: ${ejercicioUno.dividir()}`);
+}else if(operacion == 5){
+    document.write(`la Potencia es: ${ejercicioUno.potenciar()}`);
+}else if(operacion == 6){
+    document.write(`la RAIZ es: ${ejercicioUno.raizCuadrada()}`);
+}else if(operacion < 1 || operacion > 7){
+    alert(`ESTA NO ES UNA OPCION VALIDA`);
+}
 
 
 
