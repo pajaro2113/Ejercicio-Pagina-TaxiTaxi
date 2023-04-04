@@ -355,16 +355,10 @@ class calculadora{
     potenciar(){
         let num1 = parseInt(prompt("escriba la BASE"));
         let num2 = parseInt(prompt("escriba la potencia"));
-        // let result = num1;
-        // for(let i = 0; i < num2-1; i++){
-        //     result = result * num1;
-        // }
-        // return result;
         return num1**num2;
     }
     raizCuadrada(){
         let num1 = parseInt(prompt("Digite el numero para sacar raiz"));
-        //let num2 = parseInt(prompt("escriba la potencia"));
         return Math.sqrt(num1);
     }
 }
